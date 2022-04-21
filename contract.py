@@ -32,7 +32,7 @@ address1=account1.address
 Greeter = W3.eth.contract(abi=abi, bytecode=bytecode)
 
 nonce = W3.eth.getTransactionCount(address1)
-#diagnostics
+#GroupD
 #print(nonce)
 # Submit the transaction that deploys the contract
 tx_dict = Greeter.constructor().buildTransaction({
