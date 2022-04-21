@@ -76,7 +76,7 @@ print("Output from greet()")
 print(greeter.functions.greet().call())
 
 nonce = W3.eth.getTransactionCount(address1)
-tx_dict = greeter.functions.setGreeting('Hello, this is Group D').buildTransaction({
+tx_dict = greeter.functions.setGreeting('Hello, this is Group D - executing smart contract for TRADE FIANCE!').buildTransaction({
   'chainId': 3,
   'gas': 1400000,
   'gasPrice': w3.toWei('40', 'gwei'),
@@ -103,4 +103,4 @@ if tx_receipt is None:
 #tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
 print("Output from greet()")
 print(greeter.functions.greet().call({"from":account1.address}))
-#'Nihao'
+#'GroupD'
